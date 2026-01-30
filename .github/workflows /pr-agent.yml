@@ -19,3 +19,7 @@ jobs:
           # 若用硅基流动，替换为：
           OPENAI_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
           OPENAI_BASE_URL: "https://api.siliconflow.cn/v1"
+          # 关键：指定DeepSeek-V3.1模型（与硅基流动官网标识完全一致）
+          OPENAI_MODEL_NAME: "deepseek-ai/DeepSeek-V3.1"
+          # GitHub内置令牌（无需配置，自动生效）
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
